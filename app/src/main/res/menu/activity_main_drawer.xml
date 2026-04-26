@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/nav_group_main" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mouse"
+            android:icon="@drawable/ic_mouse"
+            android:title="鼠标" />
+        <item
+            android:id="@+id/nav_keyboard"
+            android:icon="@drawable/ic_keyboard"
+            android:title="键盘" />
+        <item
+            android:id="@+id/nav_kb_mouse"
+            android:icon="@drawable/ic_keyboard_mouse"
+            android:title="键盘&amp;鼠标" />
+        <item
+            android:id="@+id/nav_xbox"
+            android:icon="@drawable/ic_xbox"
+            android:title="Xbox控制器" />
+        <item
+            android:id="@+id/nav_tv_remote"
+            android:icon="@drawable/ic_tv_remote"
+            android:title="@string/menu_remote" />
+        <item
+            android:id="@+id/nav_paired_devices"
+            android:icon="@drawable/ic_bluetooth"
+            android:title="@string/setup_device" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/menu_settings" />
+        </menu>
+    </item>
+</menu>

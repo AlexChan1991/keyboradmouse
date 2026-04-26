@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:padding="8dp">
+
+    <!-- LT / RT (Triggers) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_lt"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:text="LT"
+        android:padding="0dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        app:cardBackgroundColor="@color/button_idle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_rt"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:text="RT"
+        android:padding="0dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        app:cardBackgroundColor="@color/button_idle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- LB / RB (Bumpers) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_lb"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="LB"
+        android:padding="0dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_lt" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_rb"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="RB"
+        android:padding="0dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_rt" />
+
+    <!-- Left Stick Area -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_left_stick"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="40dp"
+        app:cardBackgroundColor="@color/touchpad_bg"
+        app:cardCornerRadius="60dp"
+        app:strokeColor="#33FFFFFF"
+        app:strokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4">
+        <View
+            android:id="@+id/view_left_stick"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_xbox"
+            android:backgroundTint="@color/accent_blue" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Right Stick Area -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_right_stick"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="160dp"
+        app:cardBackgroundColor="@color/touchpad_bg"
+        app:cardCornerRadius="60dp"
+        app:strokeColor="#33FFFFFF"
+        app:strokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+        <View
+            android:id="@+id/view_right_stick"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_xbox"
+            android:backgroundTint="@color/accent_blue" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- D-Pad -->
+    <GridLayout
+        android:id="@+id/layout_dpad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+        <View android:layout_width="40dp" android:layout_height="40dp" />
+        <Button android:id="@+id/btn_up" android:layout_width="45dp" android:layout_height="45dp" android:text="↑" android:padding="0dp" android:minWidth="0dp" android:minHeight="0dp"/>
+        <View android:layout_width="40dp" android:layout_height="40dp" />
+        <Button android:id="@+id/btn_left_pad" android:layout_width="45dp" android:layout_height="45dp" android:text="←" android:padding="0dp" android:minWidth="0dp" android:minHeight="0dp"/>
+        <View android:layout_width="45dp" android:layout_height="45dp" />
+        <Button android:id="@+id/btn_right_pad" android:layout_width="45dp" android:layout_height="45dp" android:text="→" android:padding="0dp" android:minWidth="0dp" android:minHeight="0dp"/>
+        <View android:layout_width="40dp" android:layout_height="40dp" />
+        <Button android:id="@+id/btn_down" android:layout_width="45dp" android:layout_height="45dp" android:text="↓" android:padding="0dp" android:minWidth="0dp" android:minHeight="0dp"/>
+    </GridLayout>
+
+    <!-- ABXY Buttons -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_abxy"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_y"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFD600"
+            android:text="Y"
+            android:padding="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:cornerRadius="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_x"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#0091EA"
+            android:text="X"
+            android:padding="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_b"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#DD2C00"
+            android:text="B"
+            android:padding="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_a"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00C853"
+            android:text="A"
+            android:padding="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Center Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+        <Button android:id="@+id/btn_view" android:layout_width="55dp" android:layout_height="40dp" android:text="View" android:textSize="10sp" android:padding="0dp" android:minWidth="0dp" android:minHeight="0dp" android:layout_marginEnd="20dp"/>
+        <Button android:id="@+id/btn_xbox_home" android:layout_width="60dp" android:layout_height="60dp" android:background="@drawable/ic_xbox" android:backgroundTint="@color/white"/>
+        <Button android:id="@+id/btn_menu" android:layout_width="55dp" android:layout_height="40dp" android:text="Menu" android:textSize="10sp" android:padding="0dp" android:minWidth="0dp" android:minHeight="0dp" android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

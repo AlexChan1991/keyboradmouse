@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Keyboradmouse" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/google_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/google_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Background color. -->
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="CustomPopupMenuStyle" parent="Widget.Material3.PopupMenu">
+        <item name="android:itemBackground">@color/white</item>
+        <item name="android:popupBackground">@drawable/bg_popup_menu</item>
+    </style>
+
+    <style name="CustomPopupMenuOverlap" parent="ThemeOverlay.Material3.Light">
+        <item name="popupMenuStyle">@style/CustomPopupMenuStyle</item>
+        <item name="android:listPreferredItemPaddingStart">16dp</item>
+        <item name="android:listPreferredItemPaddingEnd">16dp</item>
+    </style>
+</resources>

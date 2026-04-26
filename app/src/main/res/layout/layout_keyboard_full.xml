@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Row 1: Function Keys -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2" android:layout_margin="1dp" android:padding="0dp" android:text="Esc" android:textSize="8sp" />
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="F1" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="F2" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="F3" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="F4" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="F5" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="F6" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="F7" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="F8" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="F9" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="F10" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="F11" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="F12" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2" android:layout_margin="1dp" android:padding="0dp" android:text="Del" android:textSize="8sp" />
+    </LinearLayout>
+
+    <!-- Row 2: Numbers -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="`" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="1" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="2" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="3" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="4" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="5" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="6" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="7" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="8" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="9" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="0" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="-" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="=" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:layout_margin="1dp" android:padding="0dp" android:text="BS" android:textSize="8sp" />
+    </LinearLayout>
+
+    <!-- Row 3: QWERTY -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.5" android:layout_margin="1dp" android:padding="0dp" android:text="Tab" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="Q" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="W" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="E" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="R" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="T" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="Y" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="U" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="I" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="O" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="P" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="[" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="]" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.5" android:layout_margin="1dp" android:padding="0dp" android:text="\\" />
+    </LinearLayout>
+
+    <!-- Row 4: ASDF -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.8" android:layout_margin="1dp" android:padding="0dp" android:text="Caps" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="A" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="S" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="D" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="F" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="G" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="H" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="J" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="K" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="L" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text=";" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="'" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2.2" android:layout_margin="1dp" android:padding="0dp" android:text="Enter" android:textSize="8sp" />
+    </LinearLayout>
+
+    <!-- Row 5: ZXCV -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2.2" android:layout_margin="1dp" android:padding="0dp" android:text="Shift" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="Z" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="X" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="C" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="V" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="B" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="N" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="M" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="," />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="." />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1dp" android:padding="0dp" android:text="/" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2.8" android:layout_margin="1dp" android:padding="0dp" android:text="Shift" android:textSize="8sp" />
+    </LinearLayout>
+
+    <!-- Row 6: Bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2" android:layout_margin="1dp" android:padding="0dp" android:text="Ctrl" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2" android:layout_margin="1dp" android:padding="0dp" android:text="Win" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2" android:layout_margin="1dp" android:padding="0dp" android:text="Alt" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="6" android:layout_margin="1dp" android:padding="0dp" android:text="Space" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2" android:layout_margin="1dp" android:padding="0dp" android:text="Alt" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2" android:layout_margin="1dp" android:padding="0dp" android:text="Win" android:textSize="8sp" />
+        <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2" android:layout_margin="1dp" android:padding="0dp" android:text="Ctrl" android:textSize="8sp" />
+    </LinearLayout>
+</LinearLayout>

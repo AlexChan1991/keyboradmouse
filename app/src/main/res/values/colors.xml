@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="google_blue">#1a73e8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#F1F3F4</color>
+    <color name="gray_dark">#5F6368</color>
+    <color name="mouse_left">#4285F4</color>
+    <color name="mouse_middle">#FBBC04</color>
+    <color name="mouse_right">#EA4335</color>
+
+    <!-- Blek inspired colors -->
+    <color name="bg_dark">#121212</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="accent_blue">#007AFF</color>
+    <color name="touchpad_bg">#181818</color>
+    <color name="button_idle">#2C2C2E</color>
+    <color name="button_pressed">#3A3A3C</color>
+
+    <!-- Icon Colors -->
+    <color name="icon_bg">#121212</color>
+    <color name="icon_primary">#FFFFFF</color>
+    <color name="icon_bluetooth">#007AFF</color>
+</resources>

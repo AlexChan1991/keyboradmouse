@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">keyboradmouse</string>
+    <string name="menu_mouse">鼠标</string>
+    <string name="menu_kb_mouse">键盘&amp;鼠标</string>
+    <string name="menu_keyboard">键盘</string>
+    <string name="menu_xbox">Xbox控制器</string>
+    <string name="menu_remote">电视遥控</string>
+    <string name="menu_settings">菜单排序</string>
+    <string name="bluetooth_not_connected">未连接</string>
+    <string name="bluetooth_connected">已连接: %1$s</string>
+    <string name="disconnect">断开连接</string>
+    <string name="switch_device">切换设备</string>
+    <string name="setup_device">已匹配的设备</string>
+    <string name="about_title">关于</string>
+    <string name="github_link">https://github.com/AlexChan1991</string>
+    <string name="scan_bluetooth">扫描蓝牙设备</string>
+    <string name="stop_scan">停止扫描</string>
+    <string name="available_devices">可用设备</string>
+    <string name="paired_devices">已匹配的设备</string>
+    <string name="unpair">取消匹配</string>
+    <string name="connect">连接</string>
+    <string name="unpair_confirm">确定要取消匹配设备 %1$s 吗？</string>
+</resources>

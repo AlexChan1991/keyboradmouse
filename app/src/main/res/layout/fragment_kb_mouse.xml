@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:padding="4dp">
+
+    <!-- Keyboard area (Shared Layout) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kb_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/bg_dark"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/layout_keyboard_full" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Touchpad Area -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_touchpad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/touchpad_bg"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#33FFFFFF"
+        app:strokeWidth="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_buttons"
+        app:layout_constraintEnd_toStartOf="@+id/card_scroll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kb_container">
+
+        <View
+            android:id="@+id/mouse_touchpad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Scroll Bar Area -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_scroll"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/touchpad_bg"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#33FFFFFF"
+        app:strokeWidth="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kb_container">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/mouse_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:alpha="0.3"
+                android:src="@drawable/ic_unfold_more"
+                app:tint="@color/white" />
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Bottom Buttons Area -->
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_left_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/button_idle"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <FrameLayout
+                android:id="@+id/btn_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="L"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_middle_card"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="4dp"
+            app:cardBackgroundColor="@color/button_idle"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <FrameLayout
+                android:id="@+id/btn_middle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_mouse"
+                    app:tint="@color/white" />
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_right_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/button_idle"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <FrameLayout
+                android:id="@+id/btn_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="R"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

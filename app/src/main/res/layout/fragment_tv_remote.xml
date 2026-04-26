@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:padding="16dp">
+
+    <!-- Brand Selector -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_brand_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/surface_dark"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_brands"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:singleLine="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_generic"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通用"
+                    android:checked="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_samsung"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="三星" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_xiaomi"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小米" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_sony"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="索尼" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_tcl"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TCL" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_hisense"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="海信" />
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Top Row: Power, Source & Voice -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_power"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:icon="@drawable/ic_power"
+        app:iconSize="32dp"
+        app:iconTint="#FF5252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_brand_selector"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_source"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:icon="@drawable/ic_source"
+        app:iconSize="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_voice"
+        app:layout_constraintStart_toEndOf="@+id/btn_power"
+        app:layout_constraintTop_toTopOf="@id/btn_power" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_mic"
+        app:backgroundTint="@color/accent_blue"
+        app:fabSize="normal"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_power" />
+
+    <!-- Navigation Ring (Circular) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_nav_outer"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:cardBackgroundColor="@color/surface_dark"
+        app:cardCornerRadius="120dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#33FFFFFF"
+        app:strokeWidth="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_system_keys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_power">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_up"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:icon="@drawable/ic_unfold_more"
+                app:iconSize="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_down"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:rotation="180"
+                app:icon="@drawable/ic_unfold_more"
+                app:iconSize="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_left"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:rotation="-90"
+                app:icon="@drawable/ic_unfold_more"
+                app:iconSize="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_right"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:rotation="90"
+                app:icon="@drawable/ic_unfold_more"
+                app:iconSize="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btn_ok"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:cardBackgroundColor="@color/accent_blue"
+                app:cardCornerRadius="45dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="OK"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- System Keys (Back, Home, Menu) -->
+    <LinearLayout
+        android:id="@+id/layout_system_keys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/layout_channel">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:text="返回"
+            app:cornerRadius="28dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_home"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:text="主页"
+            app:cornerRadius="28dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_menu"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:text="菜单"
+            app:cornerRadius="28dp" />
+    </LinearLayout>
+
+    <!-- Channel Control -->
+    <LinearLayout
+        android:id="@+id/layout_channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/layout_volume">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            app:cardBackgroundColor="@color/surface_dark"
+            app:cardCornerRadius="36dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_ch_down"
+                    style="@style/Widget.Material3.Button.IconButton"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    app:icon="@drawable/ic_unfold_more"
+                    app:iconSize="24dp"
+                    android:rotation="180" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="频道控制"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_ch_up"
+                    style="@style/Widget.Material3.Button.IconButton"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    app:icon="@drawable/ic_unfold_more"
+                    app:iconSize="24dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <!-- Volume Horizontal Layout -->
+    <LinearLayout
+        android:id="@+id/layout_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            app:cardBackgroundColor="@color/surface_dark"
+            app:cardCornerRadius="36dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_vol_down"
+                    style="@style/Widget.Material3.Button.IconButton"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    app:icon="@drawable/ic_unfold_more"
+                    app:iconSize="24dp"
+                    android:rotation="180" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="音量控制"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_vol_up"
+                    style="@style/Widget.Material3.Button.IconButton"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    app:icon="@drawable/ic_unfold_more"
+                    app:iconSize="24dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

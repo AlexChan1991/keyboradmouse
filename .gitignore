@@ -1,0 +1,39 @@
+# Built objects and directories
+bin/
+gen/
+obj/
+/build
+.gradle/
+.kotlin/
+
+# Android Studio and IntelliJ files
+.idea/
+*.iml
+*.iws
+*.ipr
+/captures/
+.externalNativeBuild/
+.cxx/
+cmake-build-*/
+
+# Local configuration files (SENSITIVE - DON'T UPLOAD)
+local.properties
+google-services.json
+*.jks
+*.keystore
+
+# Gradle files
+.gradle/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Secrets (if any)
+secrets.xml
+
+# Project specific
+app/build/
+*.apk
+*.aab

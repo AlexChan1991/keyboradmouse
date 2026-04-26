@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_mouse">
+
+    <fragment
+        android:id="@+id/nav_mouse"
+        android:name="com.km.keyboradmouse.ui.MouseFragment"
+        android:label="鼠标"
+        tools:layout="@layout/fragment_mouse" />
+
+    <fragment
+        android:id="@+id/nav_keyboard"
+        android:name="com.km.keyboradmouse.ui.KeyboardFragment"
+        android:label="键盘"
+        tools:layout="@layout/fragment_keyboard" />
+
+    <fragment
+        android:id="@+id/nav_kb_mouse"
+        android:name="com.km.keyboradmouse.ui.KbMouseFragment"
+        android:label="键盘&amp;鼠标"
+        tools:layout="@layout/fragment_kb_mouse" />
+
+    <fragment
+        android:id="@+id/nav_xbox"
+        android:name="com.km.keyboradmouse.ui.XboxFragment"
+        android:label="Xbox控制器"
+        tools:layout="@layout/fragment_xbox" />
+
+    <fragment
+        android:id="@+id/nav_tv_remote"
+        android:name="com.km.keyboradmouse.ui.TvRemoteFragment"
+        android:label="@string/menu_remote"
+        tools:layout="@layout/fragment_tv_remote" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.km.keyboradmouse.ui.SettingsFragment"
+        android:label="设置"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_setup_device"
+        android:name="com.km.keyboradmouse.ui.SetupDeviceFragment"
+        android:label="扫描新设备"
+        tools:layout="@layout/fragment_setup_device" />
+
+    <fragment
+        android:id="@+id/nav_paired_devices"
+        android:name="com.km.keyboradmouse.ui.PairedDevicesFragment"
+        android:label="@string/setup_device"
+        tools:layout="@layout/fragment_paired_devices" />
+</navigation>
